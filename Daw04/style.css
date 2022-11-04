@@ -1,21 +1,129 @@
 header{
-    width: 100%;
     padding-top: 20px;
     padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-radius: 20px;
+    background: rgb(0,115,13);
+    background: linear-gradient(177deg, rgba(0,115,13,1) 0%, rgba(146,255,0,1) 43%, rgba(255,255,255,1) 100%);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
-li{
+header > li{
     list-style: none;
     margin-right: 5%;
     margin-top: 3%;
 }
-li a{
+header > li a{
     text-decoration: none;
     padding: 10px;
     color: black;
+    background-color: aliceblue;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
-li a:hover{
-    color:blue;
+header > li a:hover{
+    background-color: coral;
 }
+.cuerpo{
+    border: 1px solid green;
+    border-radius: 20px 20px 0px 0px;
+    border-bottom: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    -webkit-border-radius: 20px 20px 0px 0px;
+    -moz-border-radius: 20px 20px 0px 0px;
+    -ms-border-radius: 20px 20px 0px 0px;
+    -o-border-radius: 20px 20px 0px 0px;
+}
+footer{
+    border: 1px solid rgb(152, 250, 6);
+    border-radius: 15px;
+    -webkit-border-radius: 15px 15px 0px 0px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin: 10px;
+    border-bottom: none;
+}
+a{
+    color: green;
+}
+footer > p{
+    text-align: center;
+}
+div > h4{
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+.cuerpo > div{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+.usuarios > button{
+    width: 65px;
+}
+.usuarios > a{
+    text-align: center;
+    color:green
+}
+span{
+    color: green;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.usuarios{
+    flex-grow: 0.5;
+}
+.bienvenido {
+    flex-grow: 1;
+    padding-left: 20px;
+}
+.caja-texto-imagen{
+    margin: 10px;
+    padding: 10px;
+}
+.caja-texto-imagen > img {
+    float: left;
+    padding: 10px;
+}
+.caja-texto-imagen > p{
+    text-align: justify;
+}
+hr{
+    color: lightslategray;
+    border-style: dotted;
+}
+.portada{
+    display: flex;
+    justify-content: space-between;
+    background-color: cornflowerblue;
+    color: white;
+}
+.portada > h5{
+    margin:10px;
+    padding: 10px;
+}
+.interes{
+    flex-grow: 0.5;
+    padding-left: 20px;
+}
+.intereses > a{
+    text-decoration: none;
+    color: green;
+}
+
