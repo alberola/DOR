@@ -1,3 +1,4 @@
+/*ESTILO DE LA CABECERA*/
 header{
     padding-top: 20px;
     padding-left: 20px;
@@ -33,6 +34,7 @@ header > li a{
 header > li a:hover{
     background-color: coral;
 }
+/*ESTILO DEL LA DIV QUE CONTIENE TODO EL CUERPO*/
 .cuerpo{
     border: 1px solid green;
     border-radius: 20px 20px 0px 0px;
@@ -46,6 +48,7 @@ header > li a:hover{
     -ms-border-radius: 20px 20px 0px 0px;
     -o-border-radius: 20px 20px 0px 0px;
 }
+/*ESTILOS RELACIONADOS CON EL FOOTER*/
 footer{
     border: 1px solid rgb(152, 250, 6);
     border-radius: 15px;
@@ -56,46 +59,45 @@ footer{
     margin: 10px;
     border-bottom: none;
 }
-a{
-    color: green;
-}
 footer > p{
     text-align: center;
 }
+/*ESTILOS RELACIONADOS CON EL FOOTER*/
+a{
+    color: green;
+}
+/*ESTILOS RELACIONADOS CON CUERPO DEL PROGRAMA*/
 div > h4{
     background-color: cornflowerblue;
     color: white;
     padding: 10px;
     margin: 10px;
 }
+    /*estilo de los divs del cuerpo*/
 .cuerpo > div{
     display: flex;
     flex-direction: column;
     padding: 10px;
     margin: 10px;
 }
+    /*estilo de boton de area de usuarios*/
 .usuarios > button{
     width: 65px;
 }
+    /*estilo de los a href del area de usuarios*/
 .usuarios > a{
     text-align: center;
     color:green
 }
+    /*estilo de span para simular a href en unidades de trabajo*/
 span{
     color: green;
     cursor: pointer;
     text-decoration: underline;
 }
-.usuarios{
-    flex-grow: 0.5;
-}
-.bienvenido {
-    flex-grow: 1;
-    padding-left: 20px;
-}
+    /*Estilos del div para meter la imagen junto con el texto*/
 .caja-texto-imagen{
     margin: 10px;
-    padding: 10px;
 }
 .caja-texto-imagen > img {
     float: left;
@@ -104,26 +106,45 @@ span{
 .caja-texto-imagen > p{
     text-align: justify;
 }
+    /*estilo del hr para la linea*/
 hr{
-    color: lightslategray;
-    border-style: dotted;
+    border: 1px dashed #666;
 }
+    /*estilo para poder justificar contenido de las portadas del centro*/
 .portada{
     display: flex;
     justify-content: space-between;
     background-color: cornflowerblue;
     color: white;
+    margin: 10px;
 }
 .portada > h5{
     margin:10px;
     padding: 10px;
 }
-.interes{
-    flex-grow: 0.5;
-    padding-left: 20px;
-}
+    /*estilo de los a href de la parte de webs de interés*/
 .intereses > a{
     text-decoration: none;
     color: green;
 }
 
+@media screen and (max-width: 768px) {
+    .cuerpo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header > li a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9);
+    }
+}
