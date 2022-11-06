@@ -127,7 +127,7 @@ hr{
     text-decoration: none;
     color: green;
 }
-
+    /*Parte dedicada al tratamiento de la página cuando se reduce su tamaño (version movil-tablet) */
 @media screen and (max-width: 768px) {
     .cuerpo{
         display: flex;
