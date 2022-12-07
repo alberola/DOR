@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg mt-3">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="logo.webp" alt="logo" width="80px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cartas.html">Cartas</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Desplegable
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="formulario.html">Formulario</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <hr>
+
+    <div class="container">
+        <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-dark">Sign in</button>
+        </form>
+    </div>
+
+
+    <div class="container mt-3">
+        <table class="table table-hover  rounded">
+              <tr>
+                <th>EMPLOYEES</th>
+                <th>POSITION</th>
+                <th>CONTACTS</th>
+                <th>AGE</th>
+                <th>ADDRESS</th>
+                <th>SALARY</th>
+              </tr>
+              <tr>
+                <th>Tiger Nixon</th>
+                <td>System Architect</td>
+                <td>tnixon12@example.com</td>
+                <td>61</td>
+                <td>Edinburgh</td>
+                <td>$320,800</td>
+              </tr>
+              <tr>
+                <th>Sonya Frost</th>
+                <td>Software Engineer</td>
+                <td>sfrost34@example.com</td>
+                <td>23</td>
+                <td>Edinburgh</td>
+                <td>$103,600</td>
+              </tr>
+              <tr>
+                <th>Jena Gaines</th>
+                <td>Office Manager</td>
+                <td>jgaines75@example.com</td>
+                <td>30</td>
+                <td>London</td>
+                <td>$90,560</td>
+              </tr>
+              <tr>
+                <th>Quinn Flynn</th>
+                <td>Support Lead</td>
+                <td>qflyn09@example.com</td>
+                <td>22</td>
+                <td>Edinburgh</td>
+                <td>$342,000</td>
+              </tr>
+              <tr>
+                <th>Charde Marshall</th>
+                <td>Regional Director</td>
+                <td>cmarshall28@example.com</td>
+                <td>36</td>
+                <td>San Francisco</td>
+                <td>$470,600</td>
+              </tr>
+              <tr>
+                <th>Haley Kennedy</th>
+                <td>Senior Marketing Designer</td>
+                <td>hkennedy63@example.com</td>
+                <td>43</td>
+                <td>London</td>
+                <td>$313,500</td>
+              </tr>
+              <tr>
+                <th>Tatyana Fitzpatrick</th>
+                <td>Regional Director</td>
+                <td>tfitzpatrick00@example.com</td>
+                <td>19</td>
+                <td>Warsaw</td>
+                <td>$385,750</td>
+              </tr>
+          </table>
+    </div>
+
+    <hr>
+
+    <div class="container-fluid text-center" id="footer">
+        <div class="row">
+            <div class="col-12 col-md-5">
+                <p class="h5 mb-3 pt-3">Talk with me...</p>
+                <form action="">
+                    <input type="text" placeholder="ej@gmail.com" class="form-control-sm shadow text-secondary bg-light">
+                    <input type="submit" value="Send" class="btn btn-dark">
+                </form>
+            </div>
+            <div class="col-12 col-md-6">
+                <p class="h5 mb-3 pt-3">Social Media</p>
+                <div class="row">
+                    <div class="offset-md-3  mb-3 col-12 col-md-2" >
+                        <a href="https://www.instagram.com/aleeex7_/" target="_blank"><img src="instagram.png"width="40px"></a>
+                    </div>
+                    <div class="mb-3 col-12 col-md-2">
+                        <a href="https://www.linkedin.com/in/alejandro-alberola-gopar-652284238/" target="_blank"><img src="linkedin.png" width="40px"></a>
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <a href="https://github.com/alberola" target="_blank"><img src="github.png"width="40px"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 pt-3">
+                <p class="text-center">Copyright © Alejandro Alberola 2022. All rights reserved</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
