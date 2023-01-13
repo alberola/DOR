@@ -1,39 +1,51 @@
+//FONT 
+@font-face {
+    font-family: 'Nunito';
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+}
+
+//Variables
+$background: rgb(214, 212, 212);
+$marginBotSections : 10px;
+$font: 'Nunito';
+$fontWeight: 700;
+$fontSize: 1rem;
+$fontSizeh3: $fontSize*0,5+$fontSize;
+$fontSizeh2: $fontSize*0,5+$fontSize;
+
+//BODY
 body{
+    font-family: 'Nunito';
     max-width: 1400px;
+    font-weight: 300;
+    font-size: 1rem;
     margin: 3% auto;
     font-family: 'Nunito';
 }
+h1, h3 {
+    font-weight: $fontWeight;
+}
+//HEADER
 header {
-    background-color: rgb(214, 212, 212);
-    display: flex;
-    flex-direction: column;
+    background-color: $background;
     padding: 10px;
-    align-items: center;
+    margin-bottom: $marginBotSections;
     text-align: center;
-    margin-bottom: 10px;
 }
 header a {
-    display: flex;
     width: 100%;
-    flex-direction: row;
-    //justify-content: center;
 }
 header a img {
     width: 10%;
-    display: flex;
-    align-items: left;
     float: left;
 }
-header a h1 {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+
+//NAV
 nav {
     display: flex;
     justify-content: center;
-    background-color: rgb(214, 212, 212);
+    background-color: $background;
 }
 nav ul {
     display: flex;
@@ -47,4 +59,42 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: black;
+}
+    /*LI HOVER */
+nav ul li:hover {
+    color: white;
+    text-decoration: bold;
+}
+nav ul li a:hover {
+    color: white;
+    text-decoration: bold;
+}
+
+//SECTION
+section {
+    height: 20em;
+}
+
+
+//FOOTER
+footer div{
+    background-color: $background;
+    width: 100%;
+    text-align: center;
+    margin-bottom: $marginBotSections;
+}
+footer div a{
+    text-decoration: none;
+}
+footer p{
+    background-color: $background;
+    width: 100%;
+    text-align: center;
+}
+footer p a{
+    text-decoration: none;
+    color: black;
+}
+footer img  {
+    width: 3em;
 }
