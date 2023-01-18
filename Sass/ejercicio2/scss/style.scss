@@ -7,23 +7,40 @@
 //Variables
 $background: rgb(214, 212, 212);
 $marginBotSections : 10px;
+$fontColor: black;
 $font: 'Nunito';
+//FONT WEIGHT
 $fontWeight: 700;
+$fontWeight400: 400;
+//FONT-SIZES
 $fontSize: 1rem;
-$fontSizeh3: $fontSize*0,5+$fontSize;
-$fontSizeh2: $fontSize*0,5+$fontSize;
+$sizeH1: $fontSize * 3;
+$sizeH2: $fontSize * 2;
+$sizeH3: $fontSize / 2;
+$sizeP: $fontSize - $fontSize * 8;
+$sizeLi: $fontSize + 0.1;
+
 
 //BODY
 body{
     font-family: 'Nunito';
     max-width: 1400px;
-    font-weight: 300;
-    font-size: 1rem;
+    font-weight: $fontWeight400;
+    font-size: $fontSize;
     margin: 3% auto;
     font-family: 'Nunito';
 }
 h1, h3 {
     font-weight: $fontWeight;
+}
+h1{
+    font-size: $sizeH1;
+}
+h2{
+    font-size: $sizeH2;
+}
+h3{
+    font-size: $sizeH3;
 }
 //HEADER
 header {
@@ -34,6 +51,8 @@ header {
 }
 header a {
     width: 100%;
+    text-decoration: none;
+    color: $fontColor;
 }
 header a img {
     width: 10%;
@@ -51,23 +70,24 @@ nav ul {
     display: flex;
     flex-direction: row;
     list-style: none;
+    font-size: $sizeLi;
 }
 nav ul li {
     padding-right: 20px;
     text-transform: uppercase;
+    font-weight: $fontWeight400;
 }
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: $fontColor;
+    font-weight: $fontWeight400;
 }
     /*LI HOVER */
 nav ul li:hover {
-    color: white;
-    text-decoration: bold;
+    font-weight: $fontWeight;
 }
 nav ul li a:hover {
-    color: white;
-    text-decoration: bold;
+    font-weight: $fontWeight;
 }
 
 //SECTION
@@ -89,11 +109,12 @@ footer div a{
 footer p{
     background-color: $background;
     width: 100%;
+    font-size: $sizeP;
     text-align: center;
 }
 footer p a{
     text-decoration: none;
-    color: black;
+    color: $fontColor;
 }
 footer img  {
     width: 3em;
