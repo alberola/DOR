@@ -1,0 +1,121 @@
+//FONT 
+@font-face {
+    font-family: 'Nunito';
+    src: url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+}
+
+//Variables
+$background: rgb(214, 212, 212);
+$marginBotSections : 10px;
+$fontColor: black;
+$font: 'Nunito';
+//FONT WEIGHT
+$fontWeight: 700;
+$fontWeight400: 400;
+//FONT-SIZES
+$fontSize: 1rem;
+$sizeH1: $fontSize * 3;
+$sizeH2: $fontSize * 2;
+$sizeH3: $fontSize / 2;
+$sizeP: $fontSize - $fontSize * 8;
+$sizeLi: $fontSize + 0.1;
+
+
+//BODY
+body{
+    font-family: 'Nunito';
+    max-width: 1400px;
+    font-weight: $fontWeight400;
+    font-size: $fontSize;
+    margin: 3% auto;
+    font-family: 'Nunito';
+}
+h1, h3 {
+    font-weight: $fontWeight;
+}
+h1{
+    font-size: $sizeH1;
+}
+h2{
+    font-size: $sizeH2;
+}
+h3{
+    font-size: $sizeH3;
+}
+//HEADER
+header {
+    background-color: $background;
+    padding: 10px;
+    margin-bottom: $marginBotSections;
+    text-align: center;
+}
+header a {
+    width: 100%;
+    text-decoration: none;
+    color: $fontColor;
+}
+header a img {
+    width: 10%;
+    float: left;
+}
+
+
+//NAV
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: $background;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: $sizeLi;
+}
+nav ul li {
+    padding-right: 20px;
+    text-transform: uppercase;
+    font-weight: $fontWeight400;
+}
+nav ul li a {
+    text-decoration: none;
+    color: $fontColor;
+    font-weight: $fontWeight400;
+}
+    /*LI HOVER */
+nav ul li:hover {
+    font-weight: $fontWeight;
+}
+nav ul li a:hover {
+    font-weight: $fontWeight;
+}
+
+//SECTION
+section {
+    height: 20em;
+}
+
+
+//FOOTER
+footer div{
+    background-color: $background;
+    width: 100%;
+    text-align: center;
+    margin-bottom: $marginBotSections;
+}
+footer div a{
+    text-decoration: none;
+}
+footer p{
+    background-color: $background;
+    width: 100%;
+    font-size: $sizeP;
+    text-align: center;
+}
+footer p a{
+    text-decoration: none;
+    color: $fontColor;
+}
+footer img  {
+    width: 3em;
+}
