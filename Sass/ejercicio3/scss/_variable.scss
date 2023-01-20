@@ -1,0 +1,20 @@
+//Variables
+$background: rgb(214, 212, 212);
+$marginBotSections : 10px;
+$fontColor: rgb(0, 0, 0);
+$font: 'Nunito';
+//FONT WEIGHT
+$fontWeight: 700;
+$fontWeight400: 400;
+//FONT-SIZES
+$fontSize: 1rem;
+$sizeH1: $fontSize * 3;
+$sizeH2: $fontSize * 2;
+$sizeH3: $fontSize / 2;
+$sizeP: $fontSize - $fontSize * 8;
+$sizeLi: $fontSize + 0.1;
+
+//Function to give h1 random color
+@function randomColor () {
+
+}
