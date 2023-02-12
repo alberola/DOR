@@ -1,0 +1,208 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
+}
+body {
+  font-family: "Nunito";
+  max-width: 1400px;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 3% auto;
+  font-family: "Nunito";
+}
+
+h1, h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 0.5rem;
+}
+
+header {
+  background-color: rgb(214, 212, 212);
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+header a {
+  width: 100%;
+  text-decoration: none;
+  color: rgb(97, 0, 0);
+}
+header a img {
+  width: 10%;
+  float: left;
+}
+header h2 {
+  color: rgb(0, 220, 0);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(214, 212, 212);
+  /*LI HOVER */
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-size: 1.1rem;
+}
+nav ul li {
+  padding-right: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+}
+nav ul li:hover {
+  font-weight: 700;
+}
+nav ul li a:hover {
+  font-weight: 700;
+}
+
+section {
+  min-height: 25em;
+  display: flex;
+  flex-wrap: wrap;
+}
+section article {
+  flex: 1;
+  min-width: calc(33.33% - 20px);
+  margin: 0.5em 0.25em 0 0.25em;
+  text-align: center;
+  position: relative;
+}
+section article a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+section article img {
+  width: 25%;
+  position: absolute;
+  left: 0;
+}
+section article h3,
+section article p {
+  width: 75%;
+  position: absolute;
+  right: 0;
+}
+section article h3 {
+  padding-right: 1em;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+section article p {
+  padding: 1em 0.5em;
+  font-size: 0.8rem;
+  margin-top: 35px;
+}
+@media (max-width: 992px) {
+  section article {
+    min-width: calc(50% - 20px);
+    min-height: 10em;
+  }
+}
+@media (max-width: 768px) {
+  section article {
+    flex: 0 0 100%;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 11em;
+  }
+  section article img {
+    width: 10%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+  section article h3 {
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+  section article p {
+    width: 100%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+}
+section .article-1 {
+  background-color: rgb(127, 129, 101);
+}
+section .article-2 {
+  background-color: rgb(58, 80, 102);
+}
+section .article-3 {
+  background-color: rgb(19, 105, 63);
+}
+section .article-4 {
+  background-color: rgb(2, 41, 75);
+}
+section .article-5 {
+  background-color: rgb(243, 174, 29);
+}
+section .article-6 {
+  background-color: rgb(253, 108, 80);
+}
+section .article-7 {
+  background-color: rgb(119, 116, 246);
+}
+
+footer div {
+  background-color: rgb(214, 212, 212);
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+footer div a {
+  text-decoration: none;
+}
+footer p {
+  background-color: rgb(214, 212, 212);
+  width: 100%;
+  font-size: -7rem;
+  text-align: center;
+}
+footer p a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+footer img {
+  width: 3em;
+}/*# sourceMappingURL=style.css.map */

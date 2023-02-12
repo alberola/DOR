@@ -15,6 +15,13 @@ $sizeP: $fontSize - $fontSize * 8;
 $sizeLi: $fontSize + 0.1;
 
 //Function to give h1 random color
-@function randomColor () {
-
+@mixin randomColorSubTitle () {
+    color: rgb(0, random(255), 0);
+}
+//Function to give Title random color
+@function randomColorTitle() {
+    @return rgb(random(255), 0,0);
+}
+@function randomColorBackground() {
+    @return rgb(random(255),random(255),random(255));
 }
