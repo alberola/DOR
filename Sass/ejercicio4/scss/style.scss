@@ -1,0 +1,105 @@
+@import '_variables';
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header, div{
+    padding-bottom: 30px;
+}
+
+.fuente-cuerpo {
+    padding-top: 20px;
+    color: $color-principal-1;
+    font-family: $fuente-cuerpo;
+}
+
+
+.fuente-titulos {
+    color: $color-principal-2;
+    font-family: $fuente-titulos;
+}
+
+.color-principal-1 {
+    color: $color-principal-1;
+}
+
+.color-principal-2 {
+    color: $color-principal-2;
+}
+
+.color-principal-3 {
+    color: $color-principal-3;
+}
+
+.color-principal-4 {
+    color: $color-principal-4;
+}
+
+.color-claro {
+    color: $color-claro;
+}
+
+
+.fuente-titulos > h3{
+    color: black;
+    font-weight: 800;
+}
+
+
+h1 {
+    font-size: 35px;
+}
+
+header>h1 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 55px;
+}
+
+div>h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 12px;
+}
+
+h6 {
+    font-size: 10px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.titulos > label, h1, h2, h3, h4, h5, h6 {
+    display: inline-block;
+    font-family: $fuente-titulos;
+  }
+  label{
+    padding-right: 15px;
+    font-size: 20px;
+    color: $color-claro;
+}
+
+
+.nombreFuenteCuerpo::before {
+    content: $fuente-cuerpo;
+}
+
+.nombreFuenteTitulos::before {
+    content: $fuente-titulos;
+}
